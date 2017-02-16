@@ -37,20 +37,21 @@
   <canvas id="myCanvas" width="600px" height="400px">
    </canvas>
   <script src="https://query.yahooapis.com/v1/public/yql?q=select wind from weather.forecast where woeid in (select woeid from geo.places(1) where text='chicago, il')&format=json&callback=callbackFunction"></script>
-<script> var c = document.getElementById("myCanvas");
+<script> 
+  var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
   ctx.fillStyle="#FF0000";
   ctx.moveTo(0,0);
   ctx.lineTo(200,100);
   ctx.stroke();         
-
-    function draw(event){
-    onmouse mouve=draw(event);
-   var posX=event.clientX;
-   var posX=event.clientX; 
-      }
+  
+  function draw(event){
+  onmouse mouve=draw(event);
+  var posX=event.clientX;
+  var posX=event.clientX; 
+      };
     </script> 
- 
+
   
   
 </body>
