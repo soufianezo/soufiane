@@ -19,6 +19,10 @@
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
     var marker = new google.maps.Marker({position:myCenter});
     marker.setMap(map);
+    var optionsCarte = {
+		zoom: 12,
+		center: new google.maps.LatLng(47.389982, 0.688877);
+	}
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCm-Mkwk5L-lmg0_oG0nu-2PfM7T-pYQJM &callback=myMap"></script>
