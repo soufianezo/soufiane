@@ -23,9 +23,15 @@
      var myCenter2 = new google.maps.LatLng(41.501,-0.170850);
      var marker2 = new google.maps.Marker({position:myCenter2});
       marker2.setMap(map);
-
-  }
-</script>
+    </script>
+  
+  <script>    $.get(' wether' , function(data.status){
+      alert(data.query.results.items.tite);
+       alert(data.query.results.condition.temp);  
+  </script>
+    }); 
+    
+ 
 <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCm-Mkwk5L-lmg0_oG0nu-2PfM7T-pYQJM &callback=myMap"></script>
 </body>
 </html>
